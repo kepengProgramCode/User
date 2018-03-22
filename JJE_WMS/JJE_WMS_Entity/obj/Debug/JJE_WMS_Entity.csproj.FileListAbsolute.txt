@@ -1,0 +1,8 @@
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\bin\Debug\JJE_WMS_Entity.dll
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\bin\Debug\JJE_WMS_Entity.pdb
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\obj\Debug\JJE_WMS_Entity.dll
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\obj\Debug\JJE_WMS_Entity.pdb
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\bin\Debug\Business.Framework.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\bin\Debug\Business.Framework.pdb
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\bin\Debug\zxing.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_WMS_Entity\obj\Debug\JJE_WMS_Entity.csprojResolveAssemblyReference.cache

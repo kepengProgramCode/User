@@ -1,0 +1,11 @@
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\JJE_Business.dll
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\JJE_Business.pdb
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\obj\Debug\JJE_Business.dll
+c:\users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\obj\Debug\JJE_Business.pdb
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\obj\Debug\JJE_Business.csprojResolveAssemblyReference.cache
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\Business.Framework.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\JJE_WMS_Entity.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\JJE_WMS_Entity.pdb
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\zxing.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\BarcodeLib.dll
+C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJE_Business\bin\Debug\ThoughtWorks.QRCode.dll
