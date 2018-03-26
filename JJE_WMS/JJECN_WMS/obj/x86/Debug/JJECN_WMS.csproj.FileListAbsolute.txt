@@ -25,3 +25,32 @@ C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJECN_WMS\bin\Deb
 C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.Instorage.SemifinishedStorage.resources
 C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJECN_WMS\bin\Debug\BarcodeLib.dll
 C:\Users\peng.ke\documents\visual studio 2010\Projects\JJE_WMS\JJECN_WMS\bin\Debug\ThoughtWorks.QRCode.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJECN_WMS.exe.config
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.exe
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.pdb
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJECN_WMS.exe
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJECN_WMS.pdb
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\Business.Framework.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJE_Business.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJE_WMS_Entity.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\BarcodeLib.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\ThoughtWorks.QRCode.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\zxing.dll
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJE_Business.pdb
+E:\MyCodeing\JJE_WMS\JJECN_WMS\bin\Debug\JJE_WMS_Entity.pdb
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.csprojResolveAssemblyReference.cache
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.ArrriveRecordManager.Record.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.DataBaseManager.CreatStore.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.DataBaseManager.ResizeStoreForm.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.DataBaseManager.StaffManager.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.Instorage.SemifinishedStorage.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.MainWindow.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.LogIn.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.Properties.Resources.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.TestManager.PrintReport.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.TestManager.RecordTestInfomation.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.csproj.GenerateResource.Cache
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.exe.licenses
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.OutStore.MaterialOutStore.resources
+E:\MyCodeing\JJE_WMS\JJECN_WMS\obj\x86\Debug\JJECN_WMS.PrintRibbonControllerResources.resources

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CooperativeDecision.cs" />
+    <Compile Include="InStoreDetails.cs" />
     <Compile Include="InvoiceVerify.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="MaterialSupplement.cs" />

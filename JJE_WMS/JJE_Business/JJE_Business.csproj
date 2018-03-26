@@ -61,6 +61,7 @@
     <Compile Include="Business\DGVPrinter.cs" />
     <Compile Include="Business\InstorgeBusiness.cs" />
     <Compile Include="Business\LogBusiness.cs" />
+    <Compile Include="Business\MaterialOutBusiness.cs" />
     <Compile Include="Business\PrintDiver.cs" />
     <Compile Include="Business\PrintLables.cs" />
     <Compile Include="Business\TestBusiness.cs" />

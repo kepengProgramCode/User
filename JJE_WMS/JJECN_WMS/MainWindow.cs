@@ -16,6 +16,7 @@ using JJECN_WMS.ArrriveRecordManager;
 using JJE_Business.Business;
 using JJECN_WMS.TestManager;
 using JJECN_WMS.Instorage;
+using JJECN_WMS.OutStore;
 
 namespace JJECN_WMS
 {
@@ -217,6 +218,12 @@ namespace JJECN_WMS
         {
             SemifinishedStorage sem = new SemifinishedStorage();
             ShowForm(sem);
+        }
+
+        private void 原材料出库ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MaterialOutStore material = new MaterialOutStore();
+            ShowForm(material);
         }
 
 
