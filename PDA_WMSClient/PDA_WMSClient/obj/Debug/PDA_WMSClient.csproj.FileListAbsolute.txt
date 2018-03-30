@@ -1,0 +1,8 @@
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\PDA_WMSClient.InStoreForm.resources
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\PDA_WMSClient.Properties.Resources.resources
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\PDA_WMSClient.csproj.GenerateResource.Cache
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\bin\Debug\PDA_WMSClient.exe
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\bin\Debug\PDA_WMSClient.pdb
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\PDA_WMSClient.exe
+C:\Users\peng.ke\Documents\Visual Studio 2008\Projects\PDA_WMSClient\PDA_WMSClient\obj\Debug\PDA_WMSClient.pdb

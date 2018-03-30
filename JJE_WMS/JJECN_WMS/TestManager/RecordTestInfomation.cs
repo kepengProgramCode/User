@@ -42,7 +42,7 @@ namespace JJECN_WMS.TestManager
                 string barcode = this.txtCode.Text.Trim();
                 LogBusiness.RecordLog(user, "扫码器读取条码为：" + barcode, "读取条码");
                 DataTable table = test.GetInfomation(barcode);
-                if (table.Rows != null)
+                if (table.Rows.Count != 0)
                 {
                     foreach (DataRow item in table.Rows)
                     {
@@ -78,6 +78,7 @@ namespace JJECN_WMS.TestManager
                 labArrivalCount.Text = message[0].Iquantity;
                 txtQualified.Text = message[0].Iquantity;
                 txtNoQualified.Text = (0.0).ToString();
+                labBatch.Text = message[0].Batch;
                 labUnit1.Text = message[0].Unit;
                 labUnit2.Text = message[0].Unit;
                 barcode = message[0].Barcode;
@@ -108,6 +109,7 @@ namespace JJECN_WMS.TestManager
                 recode.Qualifiedquantity = Convert.ToDecimal(txtQualified.Text);
                 recode.UnqualifiedQuantity = Convert.ToDecimal(txtNoQualified.Text);
                 recode.SupplierName = labSupplier.Text;
+                recode.Batch = labBatch.Text;
                 if (test.SaveTestData(recode) == 1)
                     MessageBox.Show("保存成功", "消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -137,6 +139,11 @@ namespace JJECN_WMS.TestManager
         private bool IsNumber(string inputerstr)
         {
             return Regex.IsMatch(inputerstr, "^([0-9]{1,}[.][0-9]*)$");
+        }
+
+        private void RecordTestInfomation_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

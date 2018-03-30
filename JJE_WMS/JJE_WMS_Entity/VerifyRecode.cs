@@ -4,7 +4,7 @@ using Business.Framework;
 namespace JJE_WMS_Entity
 {
     [Table("Table_VerifyRecode")]
-    [Columns(new string[] { "Barcode" }, "ArrivalQuantity", "InvoceNumber", "MaterialCoding", "MaterialName", "PurchaseQuantity", "Qualifiedquantity", "RecodeTime", "Remark", "SupplierName", "UnqualifiedQuantity", "VerifResult")]
+    [Columns(new string[] { "Barcode" }, "ArrivalQuantity", "InvoceNumber", "MaterialCoding", "MaterialName", "PurchaseQuantity", "Qualifiedquantity", "RecodeTime", "Remark", "SupplierName", "UnqualifiedQuantity", "VerifResult", "Batch")]
     public class VerifyRecode : Entity
     {
         // 到货数量
@@ -31,6 +31,15 @@ namespace JJE_WMS_Entity
         private decimal unqualifiedQuantity;
         // 检验结果
         private int verifResult;
+        //批次
+        private string batch;
+
+
+        public string Batch
+        {
+            get { return batch; }
+            set { batch = value; }
+        }
         public decimal ArrivalQuantity
         {
             get { return arrivalQuantity; }

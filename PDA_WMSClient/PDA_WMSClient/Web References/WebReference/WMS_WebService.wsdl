@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GrtStoreInfomation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GrtStoreInfomationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GrtStoreInfomationResult" type="tns:ArrayOfString" />
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InStorage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="storeInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="virifycode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="num" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InStorageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InStorageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GrtStoreInfomationSoapIn">
+    <wsdl:part name="parameters" element="tns:GrtStoreInfomation" />
+  </wsdl:message>
+  <wsdl:message name="GrtStoreInfomationSoapOut">
+    <wsdl:part name="parameters" element="tns:GrtStoreInfomationResponse" />
+  </wsdl:message>
+  <wsdl:message name="InStorageSoapIn">
+    <wsdl:part name="parameters" element="tns:InStorage" />
+  </wsdl:message>
+  <wsdl:message name="InStorageSoapOut">
+    <wsdl:part name="parameters" element="tns:InStorageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WMS_WebServiceSoap">
+    <wsdl:operation name="GrtStoreInfomation">
+      <wsdl:input message="tns:GrtStoreInfomationSoapIn" />
+      <wsdl:output message="tns:GrtStoreInfomationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InStorage">
+      <wsdl:input message="tns:InStorageSoapIn" />
+      <wsdl:output message="tns:InStorageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WMS_WebServiceSoap" type="tns:WMS_WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GrtStoreInfomation">
+      <soap:operation soapAction="http://tempuri.org/GrtStoreInfomation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InStorage">
+      <soap:operation soapAction="http://tempuri.org/InStorage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WMS_WebServiceSoap12" type="tns:WMS_WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GrtStoreInfomation">
+      <soap12:operation soapAction="http://tempuri.org/GrtStoreInfomation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InStorage">
+      <soap12:operation soapAction="http://tempuri.org/InStorage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WMS_WebService">
+    <wsdl:port name="WMS_WebServiceSoap" binding="tns:WMS_WebServiceSoap">
+      <soap:address location="http://192.168.19.92:8990/WMS_WebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WMS_WebServiceSoap12" binding="tns:WMS_WebServiceSoap12">
+      <soap12:address location="http://192.168.19.92:8990/WMS_WebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

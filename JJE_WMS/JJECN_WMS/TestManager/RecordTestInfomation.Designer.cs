@@ -54,6 +54,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtRemark = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.labBatch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labUnit2
@@ -310,11 +312,32 @@
             this.txtRemark.Size = new System.Drawing.Size(222, 125);
             this.txtRemark.TabIndex = 28;
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("宋体", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label13.Location = new System.Drawing.Point(993, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(86, 29);
+            this.label13.TabIndex = 29;
+            this.label13.Text = "批次:";
+            // 
+            // labBitch
+            // 
+            this.labBatch.AutoSize = true;
+            this.labBatch.Font = new System.Drawing.Font("宋体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labBatch.Location = new System.Drawing.Point(1079, 211);
+            this.labBatch.Name = "labBitch";
+            this.labBatch.Size = new System.Drawing.Size(0, 24);
+            this.labBatch.TabIndex = 30;
+            // 
             // RecordTestInfomation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1276, 651);
+            this.Controls.Add(this.labBatch);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.txtRemark);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.cmbControl);
@@ -344,6 +367,7 @@
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Name = "RecordTestInfomation";
             this.Text = "来料抽检结果记录";
+            this.Load += new System.EventHandler(this.RecordTestInfomation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +401,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtRemark;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label labBatch;
     }
 }
