@@ -1,0 +1,40 @@
+﻿<Window x:Class="A19126WMS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A19126WMS"
+        mc:Ignorable="d"
+        Title="仓储管理系统" Height="760" Width="1360" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+    <DockPanel Background="#E2E1EF" LastChildFill="True">
+        <Menu x:Name="MenuMain" Height="20" DockPanel.Dock="Top">
+            <MenuItem Width="60" TextBlock.TextAlignment="Center" Header="仓库设置">
+                <MenuItem Header="修改密码" HorizontalAlignment="Left" x:Name="ModifyPassword" Click="ModifyPassword_Click"/>
+                <Separator/>
+                <MenuItem Header="注销账户" HorizontalAlignment="Left" x:Name="Logout" Click="Logout_Click"/>
+                <MenuItem Header="退出账户" HorizontalAlignment="Left" x:Name="Exit" Click="Exit_Click"/>
+                <Separator/>
+                <MenuItem Header="库位设定" HorizontalAlignment="Left" x:Name="StoreSetting" Click="StoreSetting_Click"/>
+            </MenuItem>
+            <MenuItem Width="60" x:Name="MenuItemUser" TextBlock.TextAlignment="Center" Header="用户编辑">
+                <MenuItem Header="添加用户" HorizontalAlignment="Left" x:Name="MenuItemCreateUser" Click="MenuItemCreateUser_Click"/>
+                <MenuItem Header="查看用户" HorizontalAlignment="Left" x:Name="MenuItemViewUser" Click="MenuItemViewUser_Click"/>
+            </MenuItem>
+            <MenuItem Width="60" Header="库存状态" HorizontalAlignment="Left" x:Name="MenuItemStoreState">
+                <MenuItem Header="平面区域" HorizontalAlignment="Left" x:Name="MenuItemFlateArea" Click="MenuItemFlateArea_Click"/>
+                <MenuItem Header="超市区域" HorizontalAlignment="Left" x:Name="MenuItemMarketArea" Click="MenuItemMarketArea_Click"/>
+                <MenuItem Header="配货区域" HorizontalAlignment="Left" x:Name="MenuItemLabArea" Click="MenuItemLabArea_Click"/>
+            </MenuItem>
+            <MenuItem Width="60" TextBlock.TextAlignment="Center" Header="任务查看">
+                <MenuItem Header="入库任务" HorizontalAlignment="Left" x:Name="MenuItemInTask" Click="MenuItemInTask_Click"/>
+                <MenuItem Header="出库任务" HorizontalAlignment="Left" x:Name="MenuItemOutTask" Click="MenuItemOutTask_Click"/>
+                <MenuItem Header="移库任务" HorizontalAlignment="Left" x:Name="MenuItemMoveTask" Click="MenuItemMoveTask_Click"/>
+            </MenuItem>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom" Height="25"/>
+        <Viewbox Stretch="Fill">
+            <Canvas x:Name="MainCanvas" Width="1270" Height="700">
+            </Canvas>
+        </Viewbox>
+    </DockPanel>
+</Window>

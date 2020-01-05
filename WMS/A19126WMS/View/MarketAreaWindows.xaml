@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="A19126WMS.View.MarketAreaWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A19126WMS.View"
+        mc:Ignorable="d"
+        Width="1270" Height="700">
+    <StackPanel Height="680">
+        <Label Content="超市区域库存信息一览" Height="30" FontSize="16" HorizontalContentAlignment="Center"/>
+        <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Width="1200" Height="630">
+            <StackPanel Name="StackPanelData" Orientation="Vertical"/>
+        </ScrollViewer>
+    </StackPanel>
+</UserControl>

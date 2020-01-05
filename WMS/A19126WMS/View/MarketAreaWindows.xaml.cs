@@ -1,0 +1,47 @@
+﻿using A19126WMS.EntityBusiness;
+using A19126WMS.SubUIBusiness;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+
+namespace A19126WMS.View
+{
+    /// <summary>
+    /// MarkAreaWindows.xaml 的交互逻辑
+    /// </summary>
+    public partial class MarketAreaWindows : UserControl
+    {
+        public MarketAreaWindows()
+        {
+            InitializeComponent();
+            Init();
+        }
+
+
+        private void Init()
+        {
+            MainUIBusiness ui = new MainUIBusiness();
+
+            StoreInfomation infomation = new StoreInfomation
+            {
+                MaterialCode = "12412",
+                MaterialName = "sdfsdfsdfsdgdf",
+                MaterialSpc = "rgaergeergw756745675",
+                Batch = "345234532",
+                Count = "55"
+            };
+
+            ui.CreatLable(StackPanelData, infomation, 200);
+        }
+    }
+}
