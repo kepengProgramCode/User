@@ -35,8 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Snt.Business.Data">
-      <HintPath>dll\Snt.Business.Data.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\log4net.dll</HintPath>
     </Reference>
     <Reference Include="Snt.Framework">
       <HintPath>dll\Snt.Framework.dll</HintPath>
@@ -67,13 +68,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BaseBusiness\Exp.cs" />
+    <Compile Include="BaseBusiness\LogBusiness.cs" />
+    <Compile Include="BaseBusiness\WMSAccess.cs" />
     <Compile Include="DBBusiness\Exp.cs" />
     <Compile Include="EntityBusiness\BaseInfation.cs" />
+    <Compile Include="EntityBusiness\StorageLocation.cs" />
     <Compile Include="EntityBusiness\StoreInfomation.cs" />
+    <Compile Include="EntityBusiness\WMSTask.cs" />
     <Compile Include="LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SubUIBusiness\CreateStoreBusiness.cs" />
+    <Compile Include="SubUIBusiness\IO_TaskBusiness.cs" />
     <Compile Include="SubUIBusiness\WindowsSys.cs" />
     <Compile Include="SubUIBusiness\CustomView.cs" />
     <Compile Include="SubUIBusiness\MainUIBusiness.cs" />

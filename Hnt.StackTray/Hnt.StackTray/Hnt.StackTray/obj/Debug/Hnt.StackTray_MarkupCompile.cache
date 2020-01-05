@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\MSCD\OneDrive\桌面\Hnt.StackTray\Hnt.StackTray\Hnt.StackTray\obj\Debug\
+E:\MyGithubCode\User\Hnt.StackTray\Hnt.StackTray\Hnt.StackTray\obj\Debug\
 Hnt.StackTray
 none
 false
 DEBUG;TRACE
-C:\Users\MSCD\OneDrive\桌面\Hnt.StackTray\Hnt.StackTray\Hnt.StackTray\App.xaml
+E:\MyGithubCode\User\Hnt.StackTray\Hnt.StackTray\Hnt.StackTray\App.xaml
 8-1271329207
 
-12421377674
-25574489783
+131309524516
+251594410292
 AddTray.xaml;Controls\CanasWindow.xaml;Controls\SerchWindow.xaml;MainWindow.xaml;Resources\DictionaryStyle.xaml;SetSystem.xaml;UpdateStackTray.xaml;UpdateTray.xaml;
 
-False
+True
 

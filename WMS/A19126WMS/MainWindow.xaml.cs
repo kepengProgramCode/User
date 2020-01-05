@@ -23,18 +23,21 @@ namespace A19126WMS
     public partial class MainWindow : Window
     {
         MainUIBusiness mainUI;
+        IO_TaskBusiness taskBusiness;
         public List<MenuItem> MenuItemWindows { get; }
         public MainWindow()
         {
             InitializeComponent();
             ManagerUIBusiness.Initialize(this);
             MenuItemWindows = new List<MenuItem>();
+            taskBusiness = new IO_TaskBusiness();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //mainUI = new MainUI();
             //mainUI.CreatLable(stackpanelSide);
+            taskBusiness.QuereryIntoTask();
         }
 
         /// <summary>

@@ -18,17 +18,19 @@
         <GroupBox Width="600" Height="488" Header="平面区域结构设置" Margin="335,60">
             <Grid>
                 <Label Content="行：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="141,127,0,0" FontSize="15" Width="70" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="row" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="211,127,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtRow" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="211,127,0,0" FontSize="15" VerticalContentAlignment="Center"/>
                 <Label Content="列：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="137,199,0,0" FontSize="15" Width="70" HorizontalContentAlignment="Right"/>
-                <TextBox x:Name="colunm" Width="149" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,199,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtColunm" Width="149" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,199,0,0" FontSize="15" VerticalContentAlignment="Center"/>
                 <Button x:Name="btnSave" Content="生成库位" Height="38" Click="btnSave_Click" Margin="168,361,168,0" Style="{DynamicResource ButtonStyle}" Width="Auto" HorizontalAlignment="Stretch"/>
-                <TextBox x:Name="barCode_Copy" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="211,272,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtStoreCapacity" Width="150" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="211,272,0,0" FontSize="15" VerticalContentAlignment="Center"/>
                 <Label Content="库存容量：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="126,272,0,0" FontSize="15" Width="70" HorizontalContentAlignment="Right"/>
                 <Label Content="类别：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="141,59,0,0" FontSize="15" Width="70" HorizontalContentAlignment="Right"/>
                 <ComboBox x:Name="cbmType" Width="252" Height="30" SelectionChanged="cbmType_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="211,58,0,0" FontSize="15" VerticalContentAlignment="Center">
                     <ComboBoxItem Content="平面区域"/>
                     <ComboBoxItem Content="超市区域"/>
                     <ComboBoxItem Content="配货区域"/>
+                    <ComboBoxItem Content="空料架区域"/>
+                    <ComboBoxItem Content="空托盘区域"/>
                 </ComboBox>
             </Grid>
         </GroupBox>

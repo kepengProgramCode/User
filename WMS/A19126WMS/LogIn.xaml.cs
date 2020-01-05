@@ -1,4 +1,6 @@
-﻿using System;
+﻿using A19126WMS.BaseBusiness;
+using log4net;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,6 +33,7 @@ namespace A19126WMS
         /// <param name="e"></param>
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            LogBusiness.WriteLog(this, "");
             MainWindow mainWindow = new MainWindow();
             mainWindow.Activate();
             mainWindow.Show();
