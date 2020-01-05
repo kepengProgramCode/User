@@ -134,6 +134,7 @@ namespace EntityCreator
                 {
                     CheckBox chkbox = new CheckBox();
                     chkbox.Location = new Point(x, y);
+                    chkbox.Width = 200;
                     chkbox.Name = reader["TABLE_NAME"].ToString();
                     chkbox.Text = reader["TABLE_NAME"].ToString();
                     chkbox.Click += Chkbox_Click;
