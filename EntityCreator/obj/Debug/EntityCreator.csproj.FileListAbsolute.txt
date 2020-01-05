@@ -1,0 +1,8 @@
+C:\Users\MSCD\source\repos\EntityCreator\bin\Debug\EntityCreator.exe.config
+C:\Users\MSCD\source\repos\EntityCreator\bin\Debug\EntityCreator.exe
+C:\Users\MSCD\source\repos\EntityCreator\bin\Debug\EntityCreator.pdb
+C:\Users\MSCD\source\repos\EntityCreator\obj\Debug\EntityCreator.Properties.Resources.resources
+C:\Users\MSCD\source\repos\EntityCreator\obj\Debug\EntityCreator.csproj.GenerateResource.cache
+C:\Users\MSCD\source\repos\EntityCreator\obj\Debug\EntityCreator.exe
+C:\Users\MSCD\source\repos\EntityCreator\obj\Debug\EntityCreator.pdb
+C:\Users\MSCD\source\repos\EntityCreator\obj\Debug\EntityCreator.CreateEntiteForm.resources
