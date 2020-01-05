@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Snt.SimpleOPC</name>
+    </assembly>
+    <members>
+        <member name="T:Snt.SimpleOPC.DbAddress">
+            <summary>
+            设备地址类
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.dbName">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.key">
+            <summary>
+            KEY
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.oldValue">
+            <summary>
+            变化前的值
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.dbType">
+            <summary>
+            值类型
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.FirstValueChange">
+            <summary>
+            是否触发首次取值事件
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DbAddress.InvalidZero">
+            <summary>
+            不响应PLC变0事件
+            </summary>
+        </member>
+        <member name="M:Snt.SimpleOPC.DbAddress.#ctor(System.String,System.String)">
+            <summary>
+            设备地址类
+            </summary>
+            <param name="Key">KEY</param>
+            <param name="dbAddress">地址</param>
+        </member>
+        <member name="M:Snt.SimpleOPC.DbAddress.Accept(System.String)">
+            <summary>
+            触发值变化方法，一般无需调用
+            </summary>
+            <param name="value">值</param>
+        </member>
+        <member name="E:Snt.SimpleOPC.DbAddress.ValueChange">
+            <summary>
+            设备地址值变化事件
+            </summary>
+        </member>
+        <member name="T:Snt.SimpleOPC.ValueChangeHandle">
+            <summary>
+            设备地址值变化事件
+            </summary>
+            <param name="sender">设备地址类</param>
+            <param name="value">值</param>
+        </member>
+        <member name="T:Snt.SimpleOPC.DeviceServer">
+            <summary>
+            设备服务类
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DeviceServer.ip">
+            <summary>
+            PLC IP地址
+            </summary>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.GetInstance(System.String,System.String)">
+            <summary>
+            设备服务类
+            </summary>
+            <param name="_ip">PLC IP地址</param>
+            <param name="PLC_Model">PLC型号</param>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.Start">
+            <summary>
+            开启服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Snt.SimpleOPC.DeviceServer.listeners">
+            <summary>
+            监听地址字典
+            </summary>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.AddListen(Snt.SimpleOPC.DbAddress)">
+            <summary>
+            加入监听的设备地址
+            </summary>
+            <param name="dbAddr"></param>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.Read(System.String)">
+            <summary>
+            读取设备数据
+            </summary>
+            <param name="dbName">设备地址</param>
+            <returns></returns>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.ReadByKey(System.String)">
+            <summary>
+            使用Key读取设备数据
+            </summary>
+            <param name="key">KEY</param>
+            <returns></returns>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.Write(System.String,System.String)">
+            <summary>
+            写入设备数据
+            </summary>
+            <param name="dbName">设备地址</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Snt.SimpleOPC.DeviceServer.WriteByKey(System.String,System.String)">
+            <summary>
+            使用Key写入设备数据
+            </summary>
+            <param name="key">值</param>
+            <param name="value">设备地址</param>
+            <returns></returns>
+        </member>
+        <member name="F:Snt.SimpleOPC.DeviceServer.timeSpan">
+            <summary>
+            扫描周期
+            </summary>
+        </member>
+        <member name="F:Snt.SimpleOPC.DeviceServer.IsConnection">
+            <summary>
+            设备连接状态
+            </summary>
+        </member>
+    </members>
+</doc>

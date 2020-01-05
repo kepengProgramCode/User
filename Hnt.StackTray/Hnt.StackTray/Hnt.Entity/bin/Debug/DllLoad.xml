@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "DllLoad"
+    </assembly>
+    <members>
+        <member name="M:DllLoad.GetDllByName(System.String)">
+            <summary>
+加载DLL
+</summary>
+            <param name="name">123</param>
+            <returns>返回1</returns>
+        </member>
+    </members>
+</doc>

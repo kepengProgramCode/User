@@ -1,0 +1,6 @@
+﻿2017/08/30 09:49:15 6483709	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message)
+2017/08/30 11:24:34 0809797	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message)

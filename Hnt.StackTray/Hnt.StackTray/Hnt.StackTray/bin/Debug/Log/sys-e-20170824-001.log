@@ -1,0 +1,15 @@
+﻿2017/08/24 16:32:14 7302001	   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL, ParameterHandle handle)
+   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL)
+   在 Hnt.Business.PrintInfo.SelectEventLog() 位置 d:\NET\Hnt\标准化产品\叠盘机系统\Code\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 71
+2017/08/24 16:32:16 0532001	   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL, ParameterHandle handle)
+   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL)
+   在 Hnt.Business.PrintInfo.SelectEventLog() 位置 d:\NET\Hnt\标准化产品\叠盘机系统\Code\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 71
+2017/08/24 16:32:17 2332001	   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL, ParameterHandle handle)
+   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL)
+   在 Hnt.Business.PrintInfo.SelectEventLog() 位置 d:\NET\Hnt\标准化产品\叠盘机系统\Code\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 71
+2017/08/24 16:32:18 3412001	   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL, ParameterHandle handle)
+   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL)
+   在 Hnt.Business.PrintInfo.SelectEventLog() 位置 d:\NET\Hnt\标准化产品\叠盘机系统\Code\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 71
+2017/08/24 16:32:19 5162001	   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL, ParameterHandle handle)
+   在 Snt.Framework.Access.EntityAccess.ExecuteSelect[E](String strSQL)
+   在 Hnt.Business.PrintInfo.SelectEventLog() 位置 d:\NET\Hnt\标准化产品\叠盘机系统\Code\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 71

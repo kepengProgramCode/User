@@ -1,0 +1,15 @@
+﻿2017/07/26 17:07:12 3240033	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message) 位置 E:\project\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 53
+2017/07/26 17:09:21 2589854	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message) 位置 E:\project\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 53
+2017/07/26 17:22:38 2405016	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message) 位置 E:\project\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 53
+2017/07/26 17:24:26 4894039	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message) 位置 E:\project\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 53
+2017/07/26 17:24:34 4174913	   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL, ParameterHandle addParameters)
+   在 Snt.Framework.Access.AccessBase.ExecuteNonQuery(String strSQL)
+   在 Hnt.Business.PrintInfo.RecordUserLog(String message) 位置 E:\project\StackTray\Hnt.Business\Common\PrintInfo.cs:行号 53

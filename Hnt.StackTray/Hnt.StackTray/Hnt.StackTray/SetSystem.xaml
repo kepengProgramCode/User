@@ -1,0 +1,31 @@
+﻿<Window x:Class="Hnt.StackTray.SetSystem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hnt.StackTray"
+        mc:Ignorable="d"
+        Title="系统设置" Height="300" Width="300" FontSize="18" ResizeMode="NoResize">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Resources/DictionaryStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid>
+        <Label Content="叠盘层数：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,50,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+        <TextBox Name="trayNumbers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" TextWrapping="Wrap" Text="" Margin="140,50,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+        <Label Content="混批验证：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,110,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+        <!--RadioButton需要统一样式-->
+        <RadioButton Name="isBatchValid" Content="是" GroupName="isBatchValid" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True" Margin="140,110,0,0" FontSize="15" Height="30" VerticalContentAlignment="Center" Style="{DynamicResource RadioButtonStyle}"/>
+        <RadioButton Name="noBatchValid" Content="否" GroupName="isBatchValid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,110,0,0" FontSize="15" Height="30" VerticalContentAlignment="Center" Style="{DynamicResource RadioButtonStyle}"/>
+        <Label Content="数据验证：" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,160,0,0" FontSize="15" VerticalContentAlignment="Center"/>
+        <!--RadioButton需要统一样式-->
+        <RadioButton Name="isTrayCodeValid" Content="是" GroupName="isTrayCodeValid" HorizontalAlignment="Left" VerticalAlignment="Top" IsChecked="True" Margin="140,160,0,0" FontSize="15" Height="30" VerticalContentAlignment="Center" Style="{DynamicResource RadioButtonStyle}"/>
+        <RadioButton Name="noTrayCodeValid" Content="否" GroupName="isTrayCodeValid" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="190,160,0,0" FontSize="15" Height="30" VerticalContentAlignment="Center" Style="{DynamicResource RadioButtonStyle}"/>
+        <Button Content="设置" Margin="47,215,47,0" Click="Button_Click" Style="{StaticResource ButtonStyle}"/>
+    </Grid>
+</Window>

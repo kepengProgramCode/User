@@ -1,0 +1,511 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hnt.PlcListener</name>
+    </assembly>
+    <members>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.AddInfoEntity">
+            <summary>
+            配置节点信息key=名称描述，value=描述对应值，text=状态的中文描述
+            type=（R读，W写，L)
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.AddressesEntity">
+            <summary>
+            plc终端内存块实体
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.AddressEntity.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.List{Hnt.PlcListener.Entity.Configuration.WriteEntity},System.Collections.Generic.List{Hnt.PlcListener.Entity.Configuration.ReadEntity})">
+            <summary>
+            初始化地址信息
+            </summary>
+            <param name="key">地址标识</param>
+            <param name="value">地址</param>
+            <param name="description">描述</param>
+            <param name="isDeviceState">是否设备状态</param>
+            <param name="writes">写值内容（可空）</param>
+            <param name="reads">读值内容（可空）</param>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Key">
+            <summary>
+            地址唯一标识
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.FirstValueChange">
+            <summary>
+            类型L监听/W非监听
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.InvalidZero">
+            <summary>
+            类型L监听/W非监听
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Type">
+            <summary>
+            类型L监听/W非监听
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Value">
+            <summary>
+            DB地址
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Description">
+            <summary>
+            地址描述
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.IsDeviceState">
+            <summary>
+            是否设备状态
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Writers">
+            <summary>
+            值内容
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.AddressEntity.Reads">
+            <summary>
+            值内容
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.DevicesEntity">
+            <summary>
+            plc终端实体列表
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.DeviceEntity">
+            <summary>
+            plc终端描述，参数，key=名称描述,ip=网络地址,type=指定状态类型
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.DeviceEntity.#ctor(Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.List{Hnt.PlcListener.Entity.Configuration.AddressEntity})">
+            <summary>
+            设备信息
+            </summary>
+            <param name="workStationInfo">工位信息</param>
+            <param name="key">标识</param>
+            <param name="ip">IP</param>
+            <param name="name">名称</param>
+            <param name="statusType">状态数据类型</param>
+            <param name="deviceType">设备类型</param>
+            <param name="address">地址</param>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.Key">
+            <summary>
+            设备标识
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.Ip">
+            <summary>
+            设备IP
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.Name">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.StatusType">
+            <summary>
+            设备状态类型
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.DeviceType">
+            <summary>
+            设备型号
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.Addresses">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.DeviceTypeInfo">
+            <summary>
+            plc引用状态类
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.StationTableName">
+            <summary>
+            生成生产日志数据表名
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.DeviceTableName">
+            <summary>
+            生成plc日志数据表名
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.SystemTableName">
+            <summary>
+            生成系统日志数据表名
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.WorkStationInfo">
+            <summary>
+            工位信息
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.DeviceEntity.ServiceInfo">
+            <summary>
+            服务信息
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.DeviceStatusTypeEntity">
+            <summary>
+            状态类型列表name与plc终端指定类型关联
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.DeviceTypeInfoEntity">
+            <summary>
+            状态类型信息描述
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.DeviceTypeInfoEntity.FindByValue(System.String)">
+            <summary>
+            根据value字段查找信息类型集合
+            </summary>
+            <param name="value">状态值</param>
+            <returns>相关信息实体</returns>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.ReadEntity.#ctor(System.String,System.String,System.String)">
+            <summary>
+            读值信息
+            </summary>
+            <param name="value">值</param>
+            <param name="presentDescription">前端显示描述</param>
+            <param name="historyDescription">日志记录描述</param>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.ReadEntity.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.ReadEntity.PresentDescription">
+            <summary>
+            前端显示描述
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.ReadEntity.HistoryDescription">
+            <summary>
+            日志显示描述
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.ServiceSection">
+            <summary>
+            服务配置节
+            </summary>
+        </member>
+        <member name="T:Hnt.PlcListener.Entity.Configuration.StatusConfig">
+            <summary>
+            状态字典配置
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.StatusConfig.FindByValue(System.String)">
+            <summary>
+            查找状态集合
+            </summary>
+            <param name="type">plc关键节配置</param>
+            <returns>状态集合</returns>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity.Key">
+            <summary>
+            工位标识
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity.Description">
+            <summary>
+            工位描述
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity.LocalIp">
+            <summary>
+            本地IP
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity.LocalPort">
+            <summary>
+            本地端口
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WorkStationInfoEntity.Services">
+            <summary>
+            OPC服务
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.Entity.Configuration.WriteEntity.#ctor(System.String,System.String,System.String)">
+            <summary>
+            写值含义
+            </summary>
+            <param name="value">值</param>
+            <param name="target">目标设备</param>
+            <param name="targetKey">对应状态Key</param>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WriteEntity.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WriteEntity.Target">
+            <summary>
+            目标设备Key
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.Entity.Configuration.WriteEntity.TargetKey">
+            <summary>
+            对应状态Key
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCAddress.SetDevice(Hnt.PlcListener.PLCDevice)">
+            <summary>
+            指定设备
+            </summary>
+            <param name="device"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCAddress.Read">
+            <summary>
+            读值（需先设定Device）
+            </summary>
+            <returns>读取到的值</returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCAddress.Write(System.String)">
+            <summary>
+            写值（需先设定Device）
+            </summary>
+            <param name="setValue">写入的值</param>
+            <returns>失败返回-1</returns>
+        </member>
+        <member name="P:Hnt.PlcListener.PLCAddress.AddressConfig">
+            <summary>
+            地址配置信息
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.PLCAddress.Device">
+            <summary>
+            设备
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.AddListen(Hnt.PlcListener.PLCAddress)">
+            <summary>
+            加入监听的设备地址
+            </summary>
+            <param name="address"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.AddWriter(Hnt.PlcListener.PLCAddress)">
+            <summary>
+            加入所有设备地址
+            </summary>
+            <param name="address"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.AddAddress(Hnt.PlcListener.PLCAddress)">
+            <summary>
+            加入所有设备地址
+            </summary>
+            <param name="address"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.Read(System.String)">
+            <summary>
+            读取
+            </summary>
+            <param name="dbName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.Read(Hnt.PlcListener.PLCAddress)">
+            <summary>
+            读取
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.ReadByKey(System.String)">
+            <summary>
+            使用Key读取设备数据
+            </summary>
+            <param name="key">KEY</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.Write(System.String,System.String)">
+            <summary>
+            写入设备数据
+            </summary>
+            <param name="dbName">设备地址</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.Write(Hnt.PlcListener.PLCAddress,System.String)">
+            <summary>
+            写入设备数据
+            </summary>
+            <param name="address">设备地址</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.PLCDevice.WriteByKey(System.String,System.String)">
+            <summary>
+            使用Key写入设备数据
+            </summary>
+            <param name="key">值</param>
+            <param name="value">设备地址</param>
+            <returns></returns>
+        </member>
+        <member name="P:Hnt.PlcListener.PLCDevice.WorkStationInfo">
+            <summary>
+            工位信息
+            </summary>
+        </member>
+        <member name="P:Hnt.PlcListener.PLCDevice.DeviceConfig">
+            <summary>
+            设备信息
+            </summary>
+        </member>
+        <member name="F:Hnt.PlcListener.StationData.DatabaseManage.TimeSpan">
+            <summary>
+            扫描周期
+            </summary>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.DatabaseManage.AddSqlAction(System.Action)">
+            <summary>
+            添加待处理数据
+            </summary>
+            <param name="action"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceBusiness.WriteDeviceDataBase(Hnt.PlcListener.PLCAddress,System.String,Hnt.PlcListener.StationData.DeviceTypeConfig)">
+            <summary>
+            写入日志数据和更新当前状态
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+            <param name="type">是否监听或写</param>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.Add(Hnt.PlcListener.Entity.StationDeviceEntity)">
+            <summary>
+            添加新设备
+            </summary>
+            <param name="stationDeviceEntity"></param>
+            <returns>返回插入的ID</returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.GetDeviceSql(Hnt.PlcListener.Entity.StationDeviceEntity)">
+            <summary>
+            生成设备日志表语句
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.GetProductSql(Hnt.PlcListener.Entity.StationDeviceEntity)">
+            <summary>
+            生成生成数据语句
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.GetSystemSql(Hnt.PlcListener.Entity.StationDeviceEntity)">
+            <summary>
+            生成系统数据语句
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.QueryDataBas(System.Int32,System.String,System.String)">
+            <summary>
+            获取工位设备列表
+            </summary>
+            <param name="number">默认查询所有数据集</param>
+            <param name="SQL">查询语句方式查询</param>
+            <param name="text">混合查询方式中的查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.GetList">
+            <summary>
+            获取所有设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.StationData.StationDeviceInit.Remove(Hnt.PlcListener.Entity.StationDeviceEntity)">
+            <summary>
+            移除设备
+            </summary>
+            <param name="stationDeviceEntity"></param>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.Init(System.Boolean)">
+            <summary>
+            初始化
+            </summary>
+            <param name="isStartListen">是否启动监听</param>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.StartListen">
+            <summary>
+            启动监听
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.DBInit(Hnt.PlcListener.Entity.Configuration.DeviceEntity)">
+            <summary>
+            初始化数据信息
+            </summary>
+            <param name="item">plc配置信息</param>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.WriteDeviceDateBase(Hnt.PlcListener.PLCDevice,Hnt.PlcListener.PLCAddress,System.String,Hnt.PlcListener.StationData.DeviceTypeConfig)">
+            <summary>
+            只写入设备数据库记录
+            </summary>
+            <param name="device">设备</param>
+            <param name="address">设备地址</param>
+            <param name="value">写入状态</param>
+            <param name="type">记录类型，监听或写入</param>
+            <returns>返回是否成功</returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.WritetSystemState(System.String,System.Int32)">
+            <summary>
+            更新历史状态或错误状态
+            </summary>
+            <param name="description">状态</param>
+            <param name="isError">错误代码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.WriteRunningState(System.String,System.String,System.String)">
+            <summary>
+            写程序系统状态
+            </summary>
+            <param name="state">状态</param>
+            <param name="description">描述</param>
+            <param name="workcode">工位编号</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.WriteProduct(System.String,Hnt.PlcListener.Entity.ProductProcessDataEntity)">
+            <summary>
+            根据表名写生产数据
+            </summary>
+            <param name="tablename">生产数据数据库表名</param>
+            <param name="entity">生产数据实体</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.WriteProductDateBase(Hnt.PlcListener.PLCDevice,Hnt.PlcListener.Entity.ProductProcessDataEntity)">
+            <summary>
+            写入生产数据记录
+            </summary>
+            <param name="device">设备</param>
+            <param name="entity">生产数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.GetSumDuration(Hnt.PlcListener.PLCDevice,Hnt.PlcListener.StationData.StatusType,System.DateTime,System.DateTime)">
+            <summary>
+            按条件统计各类型信息
+            </summary>
+            <param name="device">设备</param>
+            <param name="statusType">状态条件类型</param>
+            <param name="startTime">起始时间</param>
+            <param name="endTime">截止时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hnt.PlcListener.WorkStation.GetSumDuration(Hnt.PlcListener.PLCDevice,Hnt.PlcListener.StationData.StatusType)">
+            <summary>
+            按条件统计各类型信息
+            </summary>
+            <param name="device">设备</param>
+            <param name="statusType">状态条件类型</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
