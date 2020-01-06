@@ -33,7 +33,7 @@ namespace A19126WMS.View
         private void Init()
         {
             MainUI_DB_Business mainUI_DB_Business = new MainUI_DB_Business();
-            List<List<LocationMaterialInfo>> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.MARKET, out int storeCout);
+            List<LocationMaterialInfo> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.MARKET, out int storeCout);
             MainUIBusiness ui = new MainUIBusiness(infomation);
             ui.CreatLable(StackPanelData, storeCout);
         }

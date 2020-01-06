@@ -54,7 +54,6 @@ E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\A19126WMS.exe
 E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\A19126WMS.pdb
 E:\MyGithubCode\User\WMS\A19126WMS\bin\Debug\log4net.dll
 E:\MyGithubCode\User\WMS\A19126WMS\bin\Debug\log4net.xml
-E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\A19126WMS.csprojAssemblyReference.cache
 E:\GithubCode\User\WMS\A19126WMS\bin\Debug\A19126WMS.exe.config
 E:\GithubCode\User\WMS\A19126WMS\bin\Debug\A19126WMS.exe
 E:\GithubCode\User\WMS\A19126WMS\bin\Debug\A19126WMS.pdb
@@ -86,3 +85,5 @@ E:\GithubCode\User\WMS\A19126WMS\obj\Debug\A19126WMS.exe
 E:\GithubCode\User\WMS\A19126WMS\obj\Debug\A19126WMS.pdb
 E:\GithubCode\User\WMS\A19126WMS\obj\Debug\View\StoreStructInfomation\StoreStructWindows.g.cs
 E:\GithubCode\User\WMS\A19126WMS\obj\Debug\View\StoreStructInfomation\StoreStructWindows.baml
+E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\View\StoreStructInfomation\StoreStructWindows.g.cs
+E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\View\StoreStructInfomation\StoreStructWindows.baml

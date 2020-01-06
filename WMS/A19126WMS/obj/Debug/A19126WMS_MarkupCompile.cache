@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\GithubCode\User\WMS\A19126WMS\obj\Debug\
+E:\MyGithubCode\User\WMS\A19126WMS\obj\Debug\
 A19126WMS
 none
 false
 DEBUG;TRACE
-E:\GithubCode\User\WMS\A19126WMS\App.xaml
+E:\MyGithubCode\User\WMS\A19126WMS\App.xaml
 72039333743
 
 36344159842
-18-1619080940
+18-645844294
 LogIn.xaml;MainWindow.xaml;Resources\DictionaryStyle.xaml;View\FlatAreaWindows.xaml;View\MarketAreaWindows.xaml;View\StoreSettingWindows.xaml;View\StoreStructInfomation\StoreStructWindows.xaml;
 
-True
+False
 

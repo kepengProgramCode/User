@@ -13,8 +13,8 @@ namespace A19126WMS.SubUIBusiness
 {
     class MainUIBusiness
     {
-        List<List<LocationMaterialInfo>> locationMaterialInfos;
-        public MainUIBusiness(List<List<LocationMaterialInfo>> infomation)
+        List<LocationMaterialInfo> locationMaterialInfos;
+        public MainUIBusiness(List<LocationMaterialInfo> infomation)
         {
             locationMaterialInfos = infomation;
         }
@@ -63,7 +63,7 @@ namespace A19126WMS.SubUIBusiness
             Label label = sender as Label;
             StoreStructWindows storeStructWindows = new StoreStructWindows();
             storeStructWindows.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            storeStructWindows.ListBind = locationMaterialInfos.Select(o => o.Where(p => $"{p.LocationRow}-{p.LocationColumn}".Equals(label.Content)));
+            storeStructWindows.ListBind = locationMaterialInfos.Where(o => ($"{o.LocationRow}-{o.LocationColumn}").Equals(label.Content)).ToList();
             storeStructWindows.Show();
         }
     }
