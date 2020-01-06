@@ -16,7 +16,7 @@
 
     <Grid Background="#E2E1EF">
         <Label Content="库位状态详细查看" FontSize="20" Margin="362,10,361,326"/>
-        <ListView Name="HistoryData" ItemsSource="{Binding ListBind}" Margin="30,60,30,30" Style="{DynamicResource DefaultListView}">
+        <ListView Name="ListData" ItemsSource="{Binding ListBind}" Margin="30,60,30,30" Style="{DynamicResource DefaultListView}">
             <ListView.View>
                 <GridView ColumnHeaderContainerStyle="{DynamicResource DefaultGridViewColumnHeader}">
                     <GridViewColumn Width="60" Header="排">

@@ -1,6 +1,6 @@
 /*
 *作者：
-*创建时间：2020/1/6 9:37:25 
+*创建时间：2020/1/6 16:32:21 
 */
 
 using Snt.Framework.DataAttribute;
@@ -38,6 +38,15 @@ namespace A19126WMS.EntityBusiness
         public const string ISINSTOCK = "IsInStock";
         public const string ENDLOCATIONID = "EndLocationId";
         public const string CACPCITY = "Cacpcity";
+
+        private int id;
+        /// <summary>
+        /// 
+        /// </summary>
+        public int Id
+        {
+            get { return id; }
+        }
 
         private int row;
         /// <summary>
@@ -101,7 +110,7 @@ namespace A19126WMS.EntityBusiness
 
         private int storeType;
         /// <summary>
-        /// 1:仓储库位 2:出入库口库位
+        /// 0:平面库 1:超市区域 2：配货区域 3：空料架区域 4：托盘区域
         /// </summary>
         public int StoreType
         {
@@ -240,11 +249,7 @@ namespace A19126WMS.EntityBusiness
         }
 
         private int cacpcity;
-        public int Cacpcity
-        {
-            get { return cacpcity; }
-            set { cacpcity = value; }
-        }
+        public int Cacpcity { get => cacpcity; set => cacpcity = value; }
 
     }
 }

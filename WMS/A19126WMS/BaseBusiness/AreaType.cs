@@ -8,7 +8,7 @@ namespace A19126WMS.BaseBusiness
 {
     public enum AreaType
     {
-        FLATE,
-        MARKET,
+        FLATE = 0,
+        MARKET = 1
     }
 }

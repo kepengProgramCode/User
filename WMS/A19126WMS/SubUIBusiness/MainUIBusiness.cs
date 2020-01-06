@@ -13,11 +13,16 @@ namespace A19126WMS.SubUIBusiness
 {
     class MainUIBusiness
     {
+        List<List<LocationMaterialInfo>> locationMaterialInfos;
+        public MainUIBusiness(List<List<LocationMaterialInfo>> infomation)
+        {
+            locationMaterialInfos = infomation;
+        }
         /// <summary>
         ///  创建库存
         /// </summary>
         /// <param name="panel"></param>
-        public void CreatLable(StackPanel panel, List<List<LocationMaterialInfo>> infomation, int storeCout)
+        public void CreatLable(StackPanel panel, int storeCout)
         {
             int row = 1;
             List<Label> listLable1 = new List<Label>();
@@ -55,8 +60,10 @@ namespace A19126WMS.SubUIBusiness
 
         private void Labes_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
+            Label label = sender as Label;
             StoreStructWindows storeStructWindows = new StoreStructWindows();
             storeStructWindows.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            storeStructWindows.ListBind = locationMaterialInfos.Select(o => o.Where(p => $"{p.LocationRow}-{p.LocationColumn}".Equals(label.Content)));
             storeStructWindows.Show();
         }
     }

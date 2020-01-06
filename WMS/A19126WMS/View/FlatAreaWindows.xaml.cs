@@ -31,10 +31,10 @@ namespace A19126WMS.View
 
         private void Initialize()
         {
-            MainUIBusiness ui = new MainUIBusiness();
             MainUI_DB_Business mainUI_DB_Business = new MainUI_DB_Business();
-            List<List<LocationMaterialInfo>> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.FLATE);
-            ui.CreatLable(StackPanelData, infomation, 100);
+            List<List<LocationMaterialInfo>> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.FLATE, out int storeCout);
+            MainUIBusiness ui = new MainUIBusiness(infomation);
+            ui.CreatLable(StackPanelData, storeCout);
         }
     }
 }

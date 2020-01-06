@@ -11,13 +11,14 @@ namespace A19126WMS.DBBusiness
 {
     class MainUI_DB_Business
     {
-        public List<List<LocationMaterialInfo>> GetStoreDetilyByStore(AreaType areaType)
+        public List<List<LocationMaterialInfo>> GetStoreDetilyByStore(AreaType areaType, out int storeCout)
         {
             List<LocationMaterialInfo> info;
             List<LocationMaterialInfo> temp;
             List<List<LocationMaterialInfo>> tempst = new List<List<LocationMaterialInfo>>();
             using (WMSAccess access = new WMSAccess())
             {
+                storeCout = (int)access.ExecuteScalar($"SELECT COUNT(*) FROM [StorageLocation] WHERE [StoreType] ={(int)areaType}");
                 temp = access.ExecuteSelect<LocationMaterialInfo>($"SELECT [LocationRow],[LocationColumn],[LocationLayer] FROM LocationMaterialInfo WHERE [StoreType] ={(int)areaType} GROUP BY [LocationRow], [LocationColumn], [LocationLayer] HAVING COUNT ( * ) >= 1");
                 info = access.Select<LocationMaterialInfo>($"SELECT * FROM LocationMaterialInfo WHERE StoreType = {(int)areaType}");
             }
