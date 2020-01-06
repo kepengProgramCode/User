@@ -1,4 +1,6 @@
-﻿using A19126WMS.EntityBusiness;
+﻿using A19126WMS.BaseBusiness;
+using A19126WMS.DBBusiness;
+using A19126WMS.EntityBusiness;
 using A19126WMS.SubUIBusiness;
 using System;
 using System.Collections.Generic;
@@ -31,16 +33,8 @@ namespace A19126WMS.View
         private void Init()
         {
             MainUIBusiness ui = new MainUIBusiness();
-
-            StoreInfomation infomation = new StoreInfomation
-            {
-                MaterialCode = "12412",
-                MaterialName = "sdfsdfsdfsdgdf",
-                MaterialSpc = "rgaergeergw756745675",
-                Batch = "345234532",
-                Count = "55"
-            };
-
+            MainUI_DB_Business mainUI_DB_Business = new MainUI_DB_Business();
+            List<List<LocationMaterialInfo>> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.MARKET);
             ui.CreatLable(StackPanelData, infomation, 200);
         }
     }

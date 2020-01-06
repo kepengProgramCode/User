@@ -1,6 +1,6 @@
 /*
 *作者：
-*创建时间：2020/1/5 20:18:21 
+*创建时间：2020/1/6 9:37:25 
 */
 
 using Snt.Framework.DataAttribute;
@@ -10,7 +10,7 @@ using System;
 namespace A19126WMS.EntityBusiness
 {
     [Table("StorageLocation")]
-    [Column(new string[] { "Id" }, "Row", "Column", "Layer", "TrayCode", "State", "InOutStockState", "StoreType", "Priority", "StorageLocationTypeId", "Remarks", "CreateTime", "EnterTime", "SilenceTime", "SilenceTimeOut", "OverTimeOut", "StorageLocationTypeName", "LockingState", "AgvNo", "IsInStock", "Cacpcity")]
+    [Column(new string[] { "Row" }, "Column", "Layer", "TrayCode", "State", "InOutStockState", "StoreType", "Priority", "StorageLocationTypeId", "Remarks", "CreateTime", "EnterTime", "SilenceTime", "SilenceTimeOut", "OverTimeOut", "StorageLocationTypeName", "LockingState", "AgvNo", "IsInStock", "EndLocationId", "Cacpcity")]
     /// <summary>
     /// 
     /// </summary>
@@ -36,21 +36,12 @@ namespace A19126WMS.EntityBusiness
         public const string LOCKINGSTATE = "LockingState";
         public const string AGVNO = "AgvNo";
         public const string ISINSTOCK = "IsInStock";
+        public const string ENDLOCATIONID = "EndLocationId";
         public const string CACPCITY = "Cacpcity";
-
-        private int id;
-        /// <summary>
-        /// 自动生成Id
-        /// </summary>
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
 
         private int row;
         /// <summary>
-        /// 
+        /// 排
         /// </summary>
         public int Row
         {
@@ -60,7 +51,7 @@ namespace A19126WMS.EntityBusiness
 
         private int column;
         /// <summary>
-        /// 
+        /// 列
         /// </summary>
         public int Column
         {
@@ -70,7 +61,7 @@ namespace A19126WMS.EntityBusiness
 
         private int layer;
         /// <summary>
-        /// 
+        /// 层
         /// </summary>
         public int Layer
         {
@@ -80,7 +71,7 @@ namespace A19126WMS.EntityBusiness
 
         private string trayCode;
         /// <summary>
-        /// 
+        /// 托盘条码
         /// </summary>
         public string TrayCode
         {
@@ -90,7 +81,7 @@ namespace A19126WMS.EntityBusiness
 
         private int state;
         /// <summary>
-        /// 
+        /// 状态 0：空；1：可入库；2：可出库；3：工作中；4：异常；5：人工锁；6：系统锁；7：不可用；8：特殊1；9：特殊2；10：特殊3；11：盘库；
         /// </summary>
         public int State
         {
@@ -100,7 +91,7 @@ namespace A19126WMS.EntityBusiness
 
         private int inOutStockState;
         /// <summary>
-        /// 
+        /// 出入库状态0：无；1：入库中；2：出库中；3：盘库中；
         /// </summary>
         public int InOutStockState
         {
@@ -110,7 +101,7 @@ namespace A19126WMS.EntityBusiness
 
         private int storeType;
         /// <summary>
-        /// 
+        /// 1:仓储库位 2:出入库口库位
         /// </summary>
         public int StoreType
         {
@@ -120,7 +111,7 @@ namespace A19126WMS.EntityBusiness
 
         private int priority;
         /// <summary>
-        /// 
+        /// 优先级
         /// </summary>
         public int Priority
         {
@@ -130,7 +121,7 @@ namespace A19126WMS.EntityBusiness
 
         private int storageLocationTypeId;
         /// <summary>
-        /// 
+        /// 库位类型Id
         /// </summary>
         public int StorageLocationTypeId
         {
@@ -140,7 +131,7 @@ namespace A19126WMS.EntityBusiness
 
         private int remarks;
         /// <summary>
-        /// 
+        /// 备注
         /// </summary>
         public int Remarks
         {
@@ -150,7 +141,7 @@ namespace A19126WMS.EntityBusiness
 
         private DateTime createTime;
         /// <summary>
-        /// 
+        /// 创建时间
         /// </summary>
         public DateTime CreateTime
         {
@@ -160,7 +151,7 @@ namespace A19126WMS.EntityBusiness
 
         private DateTime enterTime;
         /// <summary>
-        /// 
+        /// 入库时间
         /// </summary>
         public DateTime EnterTime
         {
@@ -170,7 +161,7 @@ namespace A19126WMS.EntityBusiness
 
         private float silenceTime;
         /// <summary>
-        /// 
+        /// 动态静置时间
         /// </summary>
         public float SilenceTime
         {
@@ -180,7 +171,7 @@ namespace A19126WMS.EntityBusiness
 
         private DateTime silenceTimeOut;
         /// <summary>
-        /// 
+        /// 静置到达时间
         /// </summary>
         public DateTime SilenceTimeOut
         {
@@ -190,7 +181,7 @@ namespace A19126WMS.EntityBusiness
 
         private DateTime overTimeOut;
         /// <summary>
-        /// 
+        /// 超限到达时间
         /// </summary>
         public DateTime OverTimeOut
         {
@@ -200,7 +191,7 @@ namespace A19126WMS.EntityBusiness
 
         private string storageLocationTypeName;
         /// <summary>
-        /// 
+        /// 库位类型名称
         /// </summary>
         public string StorageLocationTypeName
         {
@@ -210,7 +201,7 @@ namespace A19126WMS.EntityBusiness
 
         private int lockingState;
         /// <summary>
-        /// 
+        /// 库位锁定状态：0-无锁；1-人工锁；2-系统锁；3：盘库锁
         /// </summary>
         public int LockingState
         {
@@ -220,7 +211,7 @@ namespace A19126WMS.EntityBusiness
 
         private string agvNo;
         /// <summary>
-        /// 
+        /// AGV编号
         /// </summary>
         public string AgvNo
         {
@@ -230,12 +221,22 @@ namespace A19126WMS.EntityBusiness
 
         private int isInStock;
         /// <summary>
-        /// 
+        /// 库位是否有货：0-无货；1-有货；
         /// </summary>
         public int IsInStock
         {
             get { return isInStock; }
             set { isInStock = value; }
+        }
+
+        private int endLocationId;
+        /// <summary>
+        /// 目标库位id
+        /// </summary>
+        public int EndLocationId
+        {
+            get { return endLocationId; }
+            set { endLocationId = value; }
         }
 
         private int cacpcity;

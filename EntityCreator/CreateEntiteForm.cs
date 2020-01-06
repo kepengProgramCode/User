@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,10 +15,16 @@ namespace EntityCreator
 {
     public partial class CreateEntiteForm : Form
     {
+        string server = ConfigurationManager.AppSettings["server"];
+        string user = ConfigurationManager.AppSettings["user"];
+        string password = ConfigurationManager.AppSettings["uwp"];
         List<CheckBox> listCheckBox = new List<CheckBox>();
         public CreateEntiteForm()
         {
             InitializeComponent();
+            this.txtServerName.Text = server;
+            this.txtUserName.Text = user;
+            this.txtPwd.Text = password;
             this.btnExport.Enabled = false;
             this.btnConnectionDb.Enabled = false;
         }
@@ -30,17 +37,12 @@ namespace EntityCreator
             if (sqlConnection.State != ConnectionState.Connecting)
             {
                 sqlConnection.Open();
-                string commamdText = "SELECT name FROM sysdatabases";
+                string commamdText = "SELECT NAME FROM MASTER.DBO.SYSDATABASES ORDER BY NAME";
                 SqlCommand sqlCommand = new SqlCommand(commamdText, sqlConnection);
                 SqlDataReader reader = sqlCommand.ExecuteReader();
-                int index = 0;
                 while (reader.Read())
                 {
-                    index++;
-                    if (index > 6)
-                    {
-                        cobmDatabaseName.Items.Add((string)reader["name"]);
-                    }
+                    cobmDatabaseName.Items.Add((string)reader["name"]);
                 }
                 sqlConnection.Close();
                 if (cobmDatabaseName.Items.Count > 0)

@@ -26,6 +26,7 @@ namespace A19126WMS.View
         {
             InitializeComponent();
             createStoreBusiness = new CreateStoreBusiness();
+            this.cbmType.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -55,6 +56,9 @@ namespace A19126WMS.View
         private void cbmType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox box = sender as ComboBox;
+            this.txtColunm.Clear();
+            this.txtRow.Clear();
+            this.txtStoreCapacity.Clear();
             txtColunm.IsEnabled = (box.SelectedIndex == 3 || box.SelectedIndex == 4) ? false : true;
             txtStoreCapacity.IsEnabled = (box.SelectedIndex == 3 || box.SelectedIndex == 4) ? false : true;
         }

@@ -15,3 +15,12 @@ E:\MyGithubCode\User\EntityCreator\obj\Debug\EntityCreator.Properties.Resources.
 E:\MyGithubCode\User\EntityCreator\obj\Debug\EntityCreator.csproj.GenerateResource.cache
 E:\MyGithubCode\User\EntityCreator\obj\Debug\EntityCreator.exe
 E:\MyGithubCode\User\EntityCreator\obj\Debug\EntityCreator.pdb
+E:\GithubCode\User\EntityCreator\bin\Debug\EntityCreator.exe.config
+E:\GithubCode\User\EntityCreator\bin\Debug\EntityCreator.exe
+E:\GithubCode\User\EntityCreator\bin\Debug\EntityCreator.pdb
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.csprojAssemblyReference.cache
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.CreateEntiteForm.resources
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.Properties.Resources.resources
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.csproj.GenerateResource.cache
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.exe
+E:\GithubCode\User\EntityCreator\obj\Debug\EntityCreator.pdb

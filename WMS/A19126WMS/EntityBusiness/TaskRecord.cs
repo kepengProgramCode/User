@@ -9,15 +9,16 @@ using System;
 
 namespace A19126WMS.EntityBusiness
 {
-    [Table("WMSTask")]
-    [Column(new string[]{"Id"},"TaskType","StartCode","StartRow","StartColumn","StartLayer","EndCode","EndRow","EndColumn","EndLayer","TrayCode","WMSState","Updator","UpdateTime","Creator","CreateTime","AGVState","Remarks")]
+    [Table("TaskRecord")]
+    [Column(new string[]{"Id"},"TaskNo","AgvNo","StartCode","StartRow","StartColumn","StartLayer","EndCode","EndRow","EndColumn","EndLayer","TrayCode","Creator")]
     /// <summary>
     /// 
     /// </summary>
-    public class WMSTask:EntityBase
+    public class TaskRecord:EntityBase
     {
        public const string ID = "Id";
-       public const string TASKTYPE = "TaskType";
+       public const string TASKNO = "TaskNo";
+       public const string AGVNO = "AgvNo";
        public const string STARTCODE = "StartCode";
        public const string STARTROW = "StartRow";
        public const string STARTCOLUMN = "StartColumn";
@@ -27,13 +28,7 @@ namespace A19126WMS.EntityBusiness
        public const string ENDCOLUMN = "EndColumn";
        public const string ENDLAYER = "EndLayer";
        public const string TRAYCODE = "TrayCode";
-       public const string WMSSTATE = "WMSState";
-       public const string UPDATOR = "Updator";
-       public const string UPDATETIME = "UpdateTime";
        public const string CREATOR = "Creator";
-       public const string CREATETIME = "CreateTime";
-       public const string AGVSTATE = "AGVState";
-       public const string REMARKS = "Remarks";
 
        private int id;
        /// <summary>
@@ -45,14 +40,24 @@ namespace A19126WMS.EntityBusiness
          set { id = value; }
        }
 
-       private int taskType;
+       private string taskNo;
        /// <summary>
        /// 
        /// </summary>
-       public int TaskType
+       public string TaskNo
        {
-         get { return taskType; }
-         set { taskType = value; }
+         get { return taskNo; }
+         set { taskNo = value; }
+       }
+
+       private string agvNo;
+       /// <summary>
+       /// 
+       /// </summary>
+       public string AgvNo
+       {
+         get { return agvNo; }
+         set { agvNo = value; }
        }
 
        private string startCode;
@@ -145,36 +150,6 @@ namespace A19126WMS.EntityBusiness
          set { trayCode = value; }
        }
 
-       private int wMSState;
-       /// <summary>
-       /// 
-       /// </summary>
-       public int WMSState
-       {
-         get { return wMSState; }
-         set { wMSState = value; }
-       }
-
-       private string updator;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string Updator
-       {
-         get { return updator; }
-         set { updator = value; }
-       }
-
-       private DateTime updateTime;
-       /// <summary>
-       /// 
-       /// </summary>
-       public DateTime UpdateTime
-       {
-         get { return updateTime; }
-         set { updateTime = value; }
-       }
-
        private string creator;
        /// <summary>
        /// 
@@ -183,36 +158,6 @@ namespace A19126WMS.EntityBusiness
        {
          get { return creator; }
          set { creator = value; }
-       }
-
-       private DateTime createTime;
-       /// <summary>
-       /// 
-       /// </summary>
-       public DateTime CreateTime
-       {
-         get { return createTime; }
-         set { createTime = value; }
-       }
-
-       private int aGVState;
-       /// <summary>
-       /// 
-       /// </summary>
-       public int AGVState
-       {
-         get { return aGVState; }
-         set { aGVState = value; }
-       }
-
-       private string remarks;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string Remarks
-       {
-         get { return remarks; }
-         set { remarks = value; }
        }
 
     }

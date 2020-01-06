@@ -46,6 +46,7 @@
       <HintPath>dll\Snt.Framework.Data.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,13 +69,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BaseBusiness\AreaType.cs" />
     <Compile Include="BaseBusiness\LogBusiness.cs" />
     <Compile Include="BaseBusiness\WMSAccess.cs" />
-    <Compile Include="DBBusiness\Exp.cs" />
-    <Compile Include="EntityBusiness\BaseInfation.cs" />
+    <Compile Include="DBBusiness\MainUI_DB_Business.cs" />
+    <Compile Include="EntityBusiness\AGVAlarmInfo.cs" />
+    <Compile Include="EntityBusiness\AgvInfo.cs" />
+    <Compile Include="EntityBusiness\AgvTask.cs" />
+    <Compile Include="EntityBusiness\AP_Site.cs" />
+    <Compile Include="EntityBusiness\Assembly_Line.cs" />
+    <Compile Include="EntityBusiness\ConfigParamter.cs" />
+    <Compile Include="EntityBusiness\Hx_User.cs" />
+    <Compile Include="EntityBusiness\LocationMaterialInfo.cs" />
+    <Compile Include="EntityBusiness\MaterialInfo.cs" />
     <Compile Include="EntityBusiness\StorageLocation.cs" />
-    <Compile Include="EntityBusiness\StoreInfomation.cs" />
+    <Compile Include="EntityBusiness\TaskMaterialInfo.cs" />
+    <Compile Include="EntityBusiness\TaskRecord.cs" />
+    <Compile Include="EntityBusiness\WMSAlarmInfo.cs" />
     <Compile Include="EntityBusiness\WMSTask.cs" />
+    <Compile Include="EntityBusiness\WorkLocationInfo.cs" />
     <Compile Include="LogIn.xaml.cs">
       <DependentUpon>LogIn.xaml</DependentUpon>
     </Compile>
@@ -92,6 +105,9 @@
     </Compile>
     <Compile Include="View\StoreSettingWindows.xaml.cs">
       <DependentUpon>StoreSettingWindows.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StoreStructInfomation\StoreStructWindows.xaml.cs">
+      <DependentUpon>StoreStructWindows.xaml</DependentUpon>
     </Compile>
     <Compile Include="WebApiBusiness\Description.cs" />
     <Page Include="LogIn.xaml">
@@ -123,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\StoreSettingWindows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StoreStructInfomation\StoreStructWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

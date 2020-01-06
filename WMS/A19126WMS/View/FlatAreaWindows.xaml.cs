@@ -1,4 +1,6 @@
-﻿using A19126WMS.EntityBusiness;
+﻿using A19126WMS.BaseBusiness;
+using A19126WMS.DBBusiness;
+using A19126WMS.EntityBusiness;
 using A19126WMS.SubUIBusiness;
 using System;
 using System.Collections.Generic;
@@ -24,20 +26,14 @@ namespace A19126WMS.View
         public FlatAreaWindows()
         {
             InitializeComponent();
-            Init();
+            Initialize();
         }
 
-        private void Init()
+        private void Initialize()
         {
             MainUIBusiness ui = new MainUIBusiness();
-            StoreInfomation infomation = new StoreInfomation
-            {
-                MaterialCode = "4352345",
-                MaterialName = "sdfsdfsdsgsdfhdfsghfsdgdf",
-                MaterialSpc = "rgaergeejfgjghjrgw756745675",
-                Batch = "3452378567856784532",
-                Count = "590"
-            };
+            MainUI_DB_Business mainUI_DB_Business = new MainUI_DB_Business();
+            List<List<LocationMaterialInfo>> infomation = mainUI_DB_Business.GetStoreDetilyByStore(AreaType.FLATE);
             ui.CreatLable(StackPanelData, infomation, 100);
         }
     }

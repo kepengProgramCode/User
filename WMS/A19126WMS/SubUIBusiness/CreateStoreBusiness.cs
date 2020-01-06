@@ -11,7 +11,15 @@ namespace A19126WMS.SubUIBusiness
 {
     class CreateStoreBusiness
     {
-        public void CreateStore(int type, int row, int column, int cacpcity, int layer = 0)
+        /// <summary>
+        /// 创建新的仓库
+        /// </summary>
+        /// <param name="type">库位类型</param>
+        /// <param name="row">排</param>
+        /// <param name="column">列</param>
+        /// <param name="cacpcity">容量</param>
+        /// <param name="layer">层</param>
+        public void CreateStore(int type, int row, int column, int cacpcity, int layer = 1)
         {
             using (WMSAccess access = new WMSAccess(true))
             {
@@ -29,13 +37,13 @@ namespace A19126WMS.SubUIBusiness
                             storageLocation.Layer = layer;
                             storageLocation.Cacpcity = cacpcity;
                             storageLocation.State = 0;
-                            storageLocation.LockingState = 1;
+                            storageLocation.LockingState = 0;
                             storageLocation.StoreType = type;
                             storageLocation.CreateTime = DateTime.Now;
                             storageLocation.EnterTime = DateTime.Now;
                             storageLocation.SilenceTimeOut = DateTime.Now;
                             storageLocation.OverTimeOut = DateTime.Now;
-                            storageLocation.StorageLocationTypeName = (type == 0) && (row < row / 2) ? "A" : "B";
+                            storageLocation.StorageLocationTypeName = (type == 0) && (i <= row / 2) ? "A" : "B";
                             access.Insert(storageLocation);
                         }
                     }

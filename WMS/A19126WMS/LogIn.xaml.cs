@@ -33,7 +33,7 @@ namespace A19126WMS
         /// <param name="e"></param>
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            LogBusiness.WriteLog(this, "");
+            BaseBusiness.LogBusiness.WriteLog(this, "用户登录");
             MainWindow mainWindow = new MainWindow();
             mainWindow.Activate();
             mainWindow.Show();

@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace A19126WMS.DBBusiness
+namespace A19126WMS.BaseBusiness
 {
-    class Exp
+    public enum AreaType
     {
-        // 该类主要用来写操作数据库的业务
+        FLATE,
+        MARKET,
     }
 }

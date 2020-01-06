@@ -9,31 +9,25 @@ using System;
 
 namespace A19126WMS.EntityBusiness
 {
-    [Table("WMSTask")]
-    [Column(new string[]{"Id"},"TaskType","StartCode","StartRow","StartColumn","StartLayer","EndCode","EndRow","EndColumn","EndLayer","TrayCode","WMSState","Updator","UpdateTime","Creator","CreateTime","AGVState","Remarks")]
+    [Table("AgvTask")]
+    [Column(new string[]{"Id"},"TaskType","StartCode","StartWorkName","EndCode","EndWorkName","TrayCode","Updator","UpdateTime","Creator","CreateTime","AGVState")]
     /// <summary>
     /// 
     /// </summary>
-    public class WMSTask:EntityBase
+    public class AgvTask:EntityBase
     {
        public const string ID = "Id";
        public const string TASKTYPE = "TaskType";
        public const string STARTCODE = "StartCode";
-       public const string STARTROW = "StartRow";
-       public const string STARTCOLUMN = "StartColumn";
-       public const string STARTLAYER = "StartLayer";
+       public const string STARTWORKNAME = "StartWorkName";
        public const string ENDCODE = "EndCode";
-       public const string ENDROW = "EndRow";
-       public const string ENDCOLUMN = "EndColumn";
-       public const string ENDLAYER = "EndLayer";
+       public const string ENDWORKNAME = "EndWorkName";
        public const string TRAYCODE = "TrayCode";
-       public const string WMSSTATE = "WMSState";
        public const string UPDATOR = "Updator";
        public const string UPDATETIME = "UpdateTime";
        public const string CREATOR = "Creator";
        public const string CREATETIME = "CreateTime";
        public const string AGVSTATE = "AGVState";
-       public const string REMARKS = "Remarks";
 
        private int id;
        /// <summary>
@@ -65,34 +59,14 @@ namespace A19126WMS.EntityBusiness
          set { startCode = value; }
        }
 
-       private string startRow;
+       private string startWorkName;
        /// <summary>
        /// 
        /// </summary>
-       public string StartRow
+       public string StartWorkName
        {
-         get { return startRow; }
-         set { startRow = value; }
-       }
-
-       private string startColumn;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string StartColumn
-       {
-         get { return startColumn; }
-         set { startColumn = value; }
-       }
-
-       private string startLayer;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string StartLayer
-       {
-         get { return startLayer; }
-         set { startLayer = value; }
+         get { return startWorkName; }
+         set { startWorkName = value; }
        }
 
        private string endCode;
@@ -105,34 +79,14 @@ namespace A19126WMS.EntityBusiness
          set { endCode = value; }
        }
 
-       private string endRow;
+       private string endWorkName;
        /// <summary>
        /// 
        /// </summary>
-       public string EndRow
+       public string EndWorkName
        {
-         get { return endRow; }
-         set { endRow = value; }
-       }
-
-       private string endColumn;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string EndColumn
-       {
-         get { return endColumn; }
-         set { endColumn = value; }
-       }
-
-       private string endLayer;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string EndLayer
-       {
-         get { return endLayer; }
-         set { endLayer = value; }
+         get { return endWorkName; }
+         set { endWorkName = value; }
        }
 
        private string trayCode;
@@ -143,16 +97,6 @@ namespace A19126WMS.EntityBusiness
        {
          get { return trayCode; }
          set { trayCode = value; }
-       }
-
-       private int wMSState;
-       /// <summary>
-       /// 
-       /// </summary>
-       public int WMSState
-       {
-         get { return wMSState; }
-         set { wMSState = value; }
        }
 
        private string updator;
@@ -203,16 +147,6 @@ namespace A19126WMS.EntityBusiness
        {
          get { return aGVState; }
          set { aGVState = value; }
-       }
-
-       private string remarks;
-       /// <summary>
-       /// 
-       /// </summary>
-       public string Remarks
-       {
-         get { return remarks; }
-         set { remarks = value; }
        }
 
     }
